@@ -1,0 +1,13 @@
+[
+  {
+    "name": "AutoPLaylist",
+    "description": "Automatically opens a preset playlist (via F12) on Spotify startup (not refreshes)",
+    "preview": "AutoPlaylist/AutoPlaylistPreview.png",
+    "main": "AutoPlaylist/autoPlaylist.js",
+    "readme": "AutoPlaylist/README.md",
+    "authors": [
+        { "name": "Kryvex", "url": "https://github.com/kryvexx" }
+    ],
+    "tags": ["playlist", "automation", "lazy", "startup"]
+  }
+]
