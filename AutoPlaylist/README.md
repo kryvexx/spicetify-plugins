@@ -18,5 +18,5 @@ This extension allows you to set a playlist that will be open automatically as s
 ## Installer (Windows only)
 Since I have no clue on how to publish extensions, here's the installer (just paste in PowerShell, [feel free to check the code](https://github.com/kryvexx/spicetify-plugins/blob/main/AutoPlaylist/install.ps1))
 ```powershell
-iwr "https://raw.githubusercontent.com/kryvexx/spicetify-plugins/refs/heads/main/AutoPlaylist/install.ps1" | iex
+iwr -UseBasicParsing "https://raw.githubusercontent.com/kryvexx/spicetify-plugins/refs/heads/main/AutoPlaylist/install.ps1" | iex
 ```
