@@ -1,4 +1,4 @@
-# spicetify-plugins
+# Kryvex' Spicetify Plugins
 Collection of my own Spicetify plugins, all free to use. Don't skid, or at least credit my work >:(
 ##### (Since my dumbass doesn't know how to upload extensions to the marketplace, I will provide installers for each plugin)
 
