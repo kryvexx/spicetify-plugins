@@ -26,19 +26,21 @@ Start-Sleep 3
 
 Write-Host "[Step 1] Checking Spicetify..." -ForegroundColor Yellow
 
-$spicetifyPath = spicetify -c 2>$null
+$spicetifyPath = spicetify path 2>$null
+
 if (-not $spicetifyPath) {
-    Write-Host "[Error] Spicetify is not installed, or is not in PATH." -ForegroundColor Red
+    Write-Host "[Error] Spicetify is not installed or not in PATH." -ForegroundColor Red
     exit
 }
 
-$spicetifyPath = Split-Path -Path $spicetifyPath -Parent
-$extensionsFolder = Join-Path $spicetifyPath "Extensions"
+$extensionsFolder = Join-Path $spicetifyPath "extensions"
 
 if (-not (Test-Path $extensionsFolder)) {
     Write-Host "[Error] Extensions folder not found." -ForegroundColor Red
     exit
 }
+
+Write-Host "[Success] Extensions folder found at: $extensionsFolder" -ForegroundColor Green
 
 Write-Host "[Step 1] All good!" -ForegroundColor Green
 
